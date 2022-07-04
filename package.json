@@ -1,0 +1,56 @@
+{
+  "name": "websocket-heartbeat-js",
+  "version": "1.1.0",
+  "description": "websocket heartbeat",
+  "main": "./dist/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "test": "node test/unit/server.js",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "build": "node_modules/webpack/bin/webpack.js",
+    "lint": "eslint .",
+    "fix": "eslint --fix ."
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zimv/websocket-heartbeat-js.git"
+  },
+  "keywords": [
+    "zimv",
+    "websocket",
+    "heartbeat"
+  ],
+  "author": "zimv",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "bugs": {
+    "url": "https://github.com/zimv/websocket-heartbeat-js/issues"
+  },
+  "homepage": "https://github.com/zimv/websocket-heartbeat-js#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
+    "conventional-changelog-cli": "^2.0.5",
+    "eslint": "^5.6.1",
+    "mocha": "^5.2.0",
+    "opn": "^6.0.0",
+    "pre-commit": "^1.2.2",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "ws": "^8.5.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": []
+  }
+}
